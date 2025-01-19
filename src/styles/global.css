@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.dark {
+  --background-color: #1a202c;
+  --text-color: #edf2f7;
+}
+
+.light {
+  --background-color: #f7fafc;
+  --text-color: #1a202c;
+}
+
+.dark .text-gray-200 {
+  color: #e2e8f0;
+}
+
+.light .text-gray-800 {
+  color: #2d3748;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 1rem;
+  }
+}

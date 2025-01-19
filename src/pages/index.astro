@@ -1,0 +1,18 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+import ProfileCard from '../components/ProfileCard.vue';
+---
+
+<DefaultLayout title="WhoAmI">
+  <section class="flex justify-center items-center min-h-screen bg-gradient-to-b from-gray-100 via-gray-200 to-gray-100 dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+    <div class="max-w-3xl w-full p-6 bg-white rounded-lg shadow-xl transform transition-all duration-300 hover:shadow-2xl hover:scale-105 dark:bg-gray-700 dark:text-gray-200 mx-4 sm:mx-8 md:mx-16">
+      <ProfileCard
+        name="Pranav Srivatsa"
+        profileImage="/images/profile.jpg"
+        description="Developer"
+        githubLink="https://github.com/code-pranav"
+        linkedinLink="https://in.linkedin.com/in/pranavsrivatsa"
+      />
+    </div>
+  </section>
+</DefaultLayout>
