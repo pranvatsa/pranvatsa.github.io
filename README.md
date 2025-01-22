@@ -1,6 +1,6 @@
-# code-pranav.github.io
+# pranvatsa.github.io
 
-Site at https://code-pranav.github.io
+Site at https://pranvatsa.github.io
 
 Steps to run
 
@@ -12,13 +12,4 @@ Steps to run
    ```bash
    npm run dev
    ```
-3. Deploy steps
-   ```bash
-   # this creates a dist folder
-   npm run build
-
-   # github page is deployed out of gh-pages branch
-   npm run deploy
-
-   # this pushes contents of dist folder to gh-pages branch which gets deployed by github pages
-   ```
+3. Deployment is handled by github actions

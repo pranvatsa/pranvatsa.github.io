@@ -6,6 +6,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://code-pranav.github.io',
+  site: 'https://pranvatsa.github.io',
   integrations: [vue(), tailwind()]
 });
