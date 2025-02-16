@@ -1,6 +1,7 @@
 ---
 const { title } = Astro.props;
 import DarkModeToggle from "../components/DarkModeToggle.vue";
+import "../styles/global.css"
 ---
 
 <html lang="en">
@@ -13,7 +14,6 @@ import DarkModeToggle from "../components/DarkModeToggle.vue";
   <meta property="og:description" content="A brief overview of Pranav Srivatsa's profile." />
   <!-- <meta property="og:image" content="/images/profile.jpg" /> -->
   <title>{title || "WhoAmI"}</title>
-  <link rel="stylesheet" href="/src/styles/global.css" />
 </head>
 
 <body
