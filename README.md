@@ -17,17 +17,20 @@ This website serves as a personal portfolio for Pranav Srivatsa.
 To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/pranvatsa/pranvatsa.github.io.git
    cd pranvatsa.github.io
    ```
 
 2. **Install Dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start the Development Server**:
+
    ```bash
    npm run dev
    ```
@@ -43,6 +46,14 @@ npm run build
 ```
 
 The built files will be output to the `dist` directory.
+
+## Formatting Code
+
+To format the code using Prettier, run the following command:
+
+```bash
+npm run format
+```
 
 ## Deployment
 
