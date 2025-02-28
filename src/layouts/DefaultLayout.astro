@@ -16,14 +16,15 @@ import "../styles/global.css"
   <title>{title || "WhoAmI"}</title>
 </head>
 
-<body
-  class="transition-colors duration-300 ease-in-out bg-gradient-to-b from-gray-100 via-gray-200 to-gray-100 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-200">
+<body class="transition-colors duration-300 ease-in-out bg-gradient-to-b from-gray-100 via-gray-200 to-gray-100 text-gray-800 font-sans dark:bg-gray-900 dark:text-gray-200 overflow-x-hidden">
   <div class="flex flex-col">
     <header class="bg-primary text-white fixed top-0 left-0 w-full p-4 shadow-md">
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold">{title || "WhoAmI"}</h1>
         <nav>
-          <a href="#about" class="mx-4 hover:text-gray-300 transition-colors">About</a>
+          <a href="/" class="mx-4 hover:text-gray-300 transition-colors">Home</a>
+          <!-- <a href="#about" class="mx-4 hover:text-gray-300 transition-colors">About</a> -->
+          <a href="/tools" class="mx-4 hover:text-gray-300 transition-colors">Tools</a>
           <DarkModeToggle client:load />
         </nav>
       </div>
