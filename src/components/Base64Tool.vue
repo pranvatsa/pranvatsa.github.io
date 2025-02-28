@@ -7,27 +7,13 @@
       aria-label="Input text"
     ></textarea>
     <div class="flex justify-between mb-4">
-      <button
-        @click="encode"
-        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
-        aria-label="Encode text"
+      <Button color="blue" @click="encode" aria-label="Encode text"
+        >Encode</Button
       >
-        Encode
-      </button>
-      <button
-        @click="decode"
-        class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800"
-        aria-label="Decode text"
+      <Button color="green" @click="decode" aria-label="Decode text"
+        >Decode</Button
       >
-        Decode
-      </button>
-      <button
-        @click="clear"
-        class="px-4 py-2 bg-red-700 text-white rounded hover:bg-red-800"
-        aria-label="Clear text"
-      >
-        Clear
-      </button>
+      <Button color="red" @click="clear" aria-label="Clear text">Clear</Button>
     </div>
     <textarea
       v-model="output"
@@ -42,6 +28,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import Button from './Button.vue';
 
 const input = ref('');
 const output = ref('');

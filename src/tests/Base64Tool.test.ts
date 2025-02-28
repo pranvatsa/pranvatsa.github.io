@@ -5,7 +5,7 @@ import Base64Tool from '../components/Base64Tool.vue';
 describe('Base64Tool.vue', () => {
   it('encodes text to Base64', async () => {
     const wrapper = mount(Base64Tool);
-    const input = wrapper.find('textarea');
+    const input = wrapper.find('textarea[aria-label="Input text"]');
     await input.setValue('Hello, World!');
     const encodeButton = wrapper.find('button[aria-label="Encode text"]');
     await encodeButton.trigger('click');
@@ -17,7 +17,7 @@ describe('Base64Tool.vue', () => {
 
   it('decodes Base64 to text', async () => {
     const wrapper = mount(Base64Tool);
-    const input = wrapper.find('textarea');
+    const input = wrapper.find('textarea[aria-label="Input text"]');
     await input.setValue('SGVsbG8sIFdvcmxkIQ==');
     const decodeButton = wrapper.find('button[aria-label="Decode text"]');
     await decodeButton.trigger('click');
@@ -27,7 +27,7 @@ describe('Base64Tool.vue', () => {
 
   it('clears input and output', async () => {
     const wrapper = mount(Base64Tool);
-    const input = wrapper.find('textarea');
+    const input = wrapper.find('textarea[aria-label="Input text"]');
     await input.setValue('Some text');
     const clearButton = wrapper.find('button[aria-label="Clear text"]');
     await clearButton.trigger('click');
@@ -38,7 +38,7 @@ describe('Base64Tool.vue', () => {
 
   it('displays error on invalid Base64 decode', async () => {
     const wrapper = mount(Base64Tool);
-    const input = wrapper.find('textarea');
+    const input = wrapper.find('textarea[aria-label="Input text"]');
     await input.setValue('Invalid Base64');
     const decodeButton = wrapper.find('button[aria-label="Decode text"]');
     await decodeButton.trigger('click');

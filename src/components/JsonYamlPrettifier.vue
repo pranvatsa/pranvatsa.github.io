@@ -7,20 +7,12 @@
       aria-label="Input text"
     ></textarea>
     <div class="flex justify-between mb-4">
-      <button
-        @click="prettifyJson"
-        class="px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800"
-        aria-label="Prettify JSON"
+      <Button color="blue" @click="prettifyJson" aria-label="Prettify JSON"
+        >Prettify JSON</Button
       >
-        Prettify JSON
-      </button>
-      <button
-        @click="prettifyYaml"
-        class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800"
-        aria-label="Prettify YAML"
+      <Button color="green" @click="prettifyYaml" aria-label="Prettify YAML"
+        >Prettify YAML</Button
       >
-        Prettify YAML
-      </button>
     </div>
     <textarea
       v-model="output"
@@ -38,6 +30,7 @@
 <script setup>
 import { ref } from 'vue';
 import yaml from 'js-yaml';
+import Button from './Button.vue';
 
 const input = ref('');
 const output = ref('');
