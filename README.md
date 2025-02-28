@@ -1,6 +1,7 @@
 # Pranav Srivatsa's Personal Website
 
-Welcome to the repository for Pranav Srivatsa's personal website, hosted at [pranvatsa.github.io](https://pranvatsa.github.io). This project is built using Astro, Vue and Tailwind CSS to create a modern, responsive, and visually appealing personal profile site.
+Welcome to the repository for Pranav Srivatsa's personal website, hosted at [pranvatsa.github.io](https://pranvatsa.github.io).
+This project is built using Astro, Vue, and Tailwind CSS.
 
 ## Project Overview
 
@@ -53,6 +54,14 @@ To format the code using Prettier, run the following command:
 
 ```bash
 npm run format
+```
+
+## Running Tests
+
+To run the tests using Vitest, run the following command:
+
+```bash
+npm run test
 ```
 
 ## Deployment
