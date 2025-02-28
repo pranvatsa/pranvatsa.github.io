@@ -16,4 +16,10 @@ module.exports = {
     },
   },
   plugins: [],
+  purge: {
+    content: ['./src/**/*.{astro,html,js,vue}'],
+    options: {
+      safelist: [],
+    },
+  },
 };
