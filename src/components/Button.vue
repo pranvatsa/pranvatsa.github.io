@@ -1,7 +1,7 @@
 <template>
   <button
     :class="[
-      'px-4 py-2 rounded text-white',
+      'px-4 py-2 rounded text-white transition-colors duration-200',
       colorClass,
       { 'hover:bg-opacity-75': !disabled },
       { 'opacity-50 cursor-not-allowed': disabled },
@@ -20,7 +20,7 @@ import { computed } from 'vue';
 const props = defineProps({
   color: {
     type: String,
-    default: 'blue',
+    default: 'primary',
   },
   disabled: {
     type: Boolean,
@@ -36,14 +36,10 @@ const emits = defineEmits(['click']);
 
 const colorClass = computed(() => {
   switch (props.color) {
-    case 'blue':
-      return 'bg-blue-700 hover:bg-blue-800';
-    case 'green':
-      return 'bg-green-700 hover:bg-green-800';
-    case 'red':
-      return 'bg-red-700 hover:bg-red-800';
+    case 'destructive':
+      return 'bg-red-600 hover:bg-red-700';
     default:
-      return 'bg-blue-700 hover:bg-blue-800';
+      return 'bg-primary hover:bg-gray-600';
   }
 });
 
